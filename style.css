@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Encode+Sans+SC:wght@300;700&family=Major+Mono+Display&family=Rubik+Mono+One&family=Staatliches&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: black;
+}
+.wrapper{
+    width: 100%;
+    margin:0 auto;
+}
+
+main{
+    display: block;
+    background-color: white;
+}
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+section.module p{
+    margin-bottom:40px;
+}
+section.module:Last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content{
+    padding: 40px 0;
+    background: #959393;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0)0, rgba(0,0,0,0) 50%, black 115%);
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0)0, rgba(0,0,0,0) 50%, black 115%);
+    background: -o-linear-gradient(to bottom, rgba(0,0,0,0)0, rgba(0,0,0,0) 50%, black 115%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0, rgba(0,0,0,0) 50%, black 115%);
+}
+section.module.parallax-1{
+    background-image: url("https://blog.123milhas.com/wp-content/uploads/2022/07/florianopolis-viagens-bate-e-volta-nas-ferias-saindo-de-floripa-conexao123.png");
+}
+section.module.parallax-2{
+    background-image: url("https://sites.armazempb.com.br/media/uploads/Praias%20(4).jpg");
+}
+section.module.parallax-3{
+    background-image: url("http://cecon.pb.gov.br/static/media/porque-paraiba/sao-joao-cg-fotocaciocurilo.jpg");
+}
+section.module.parallax-4{
+    background-image: url("https://www.mundoviajante.com/wp-content/uploads/2021/10/o-que-comer-em-joao-pessoa-min.jpg");
+}
+section.module.parallax h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+    font-family: 'Aboreto', cursive;
+    text-shadow: 0 0 100px black;
+}
